@@ -1,0 +1,56 @@
+<html>
+
+<head>
+	<script>
+		function calcu(cho) {
+			n = parseFloat(document.calsi.num1.value)
+			m = parseFloat(document.calsi.num2.value)
+			switch (cho) {
+				case 1:
+					r = n + m;
+					break;
+				case 2:
+					r = n - m;
+					break;
+				case 3:
+					r = n * m;
+					break;
+				case 4:
+					r = n / m;
+					break;
+			}
+			document.calsi.res.value = r;
+		}
+	</script>
+</head>
+
+<body>
+	<form name="calsi">
+		<table>
+			<tr>
+				<th>Enter first number</th>
+				<td><input type="text" name="num1" value="0" /></td>
+			</tr>
+			<tr>
+				<th>Enter second number</th>
+				<td><input type="text" name="num2" value="0" /></td>
+			</tr>
+
+			<tr>
+				<th>result</th>
+				<td><input type="text" name="res" value="0" /></td>
+			</tr>
+			<tr>
+				<th colspan="2"><input type="button" name="add" value="Add" onclick="calcu(1)" /><input type="button"
+						name="sub" value="Sub" onclick="calcu(2)" /><input type="button" name="multi" value="Multiply"
+						onclick="calcu(3)" /><input type="button" name="div" value="Div" onclick="calcu(4)" /></td>
+			</tr>
+
+		</table>
+	</form>
+
+
+
+</body>
+
+</html>

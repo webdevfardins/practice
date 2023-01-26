@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <style>
+        table {
+            width: 600px;
+            border: 1px solid blue
+        }
+
+        td {
+            width: 200px
+        }
+    </style>
+    <script>
+        function chkuser(funm) {
+            str = funm.value
+            if (str == "") {
+                alert("Plese enter valid user name")
+                return;
+            }
+            vchar = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_"
+            for (i = 0; i < str.length; i++) {
+                ch = str.charAt(i)
+                if (vchar.indexOf(ch) < 0) {
+                    funm.value = ""
+                    document.getElementById("user").innerHTML = "Invalid User"
+
+                    return;
+                }
+            }
+        }
+        function chkpwd(fpwd) {
+            str = fpwd.value;
+            if (str.length < 8) {
+                fpwd.value = ""
+                document.getElementById("psswd").innerHTML = "Invaid password"
+
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <form name="login">
+        <table>
+            <tr>
+                <td>User Name</td>
+                <td><input type="text" name="unm" value="" onblur=chkuser(document.login.unm)></td>
+                <td id="user"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" name="pwd" value="" onblur=chkpwd(document.login.pwd)></td>
+                <td id="psswd"></td>
+            </tr>
+            <tr>
+                <td colspan="3"><input type="submit" value="Login" /></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

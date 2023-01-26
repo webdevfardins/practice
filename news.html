@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>best news ever</title>
+    <style>
+        body {
+            font: "roboto condenced", sens-serif;
+            font-weight: 300 !important;
+            margin: 0px;
+            text-shadow: 5px solid black;
+        }
+
+        body h1 {
+            font-weight: 300;
+            margin: 20px 30px;
+
+        }
+
+        #main-header {
+            border-bottom: 2px solid black;
+        }
+
+        #top-stoties {
+            width: 1000px;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        article {
+            width: 301px;
+            display: inline-block;
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #000;
+            box-shadow: 5px 5px 10px rgba(0, 0, .4);
+        }
+
+        .article-image {
+            height: 200px;
+            width: 100%;
+            background-size: cover ! important;
+            background-position: center ! important;
+        }
+
+        .more-link {
+            font-style: italic;
+        }
+
+        a {
+            text-decoration: underline-through overline;
+        }
+
+        hover {
+            font-size: 32px;
+            color: aquamarine;
+        }
+
+        .my-input {
+            width: 90%;
+            margin: 10px;
+            display: block;
+            padding: 10px 20px;
+            border-radius: 10px 20px 2px 50px;
+        }
+
+        .my-input:focus {
+            background: rgb(213, 246, 218);
+            outline: none;
+            border: 1px solid #000;
+            color: rgb(164, 246, 178);
+        }
+
+        article:active {
+            opacity: 10;
+        }
+        #side-title{
+            display: inline-block;
+        }
+        .profail-menu{
+            list-style: none;
+            float:right ;
+            margin-top: 30px;
+            margin-right: 20pz;
+            
+        }
+        .profail-submenu{
+            list-style: none;
+            padding: 0px;
+            border:1px solid#aaa;
+            background: #fff;
+            margin-top: 30px;
+            box-shadow: 2px 2px 15px rgba(0,0,0,.3);
+            width: 300px;
+            position: absolute;
+            right: 10px;
+        }
+        .profail-submenu a {
+            text-decoration: none;
+            padding: 10px 10px;
+            display:block;
+            color: #333;
+            text-shadow: none;
+            font-weight: 600;
+            letter-spacing: 0px;
+            
+
+        }
+        .profail-submenu a:hover{
+            background: #eee;
+        }
+        .profail-submenu:active{
+            display: block;
+        }
+     
+    </style>
+     
+     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+  <script src="main.js"></script>
+</head>
+
+<body>
+    
+        <h1 id="side-title">Best News Ever!</h1>
+        <u1 class="profail-menu">
+            <li class="profail-menu-trigger"><a href="#">logged in as nickg </a>
+                <ul class="profail-submenu">
+                    <li><a href="#">my account</a></li>
+                    <li><a href="#">profail</a></li>
+                    <li><a href="#">setting</a></li>
+                    <li><a href="#">log out</a></li>
+                </ul>
+
+            </li>
+        </u1>
+    </header>
+    <input placeholder="srearch" class="my-input" />
+    <section id="top-stories">
+        <article>
+            <div class="article-image" style="background:url(dog.jpg)"></div>
+            <h3>dog kidneped by other dogs</h3>
+            <p>california is no stranger to dog nappings/hower,this onw tack the puppy cake....<a class-more-link
+                    href="#">read more....</a>
+        </article>
+        <article>
+            <div class="article-image" style="background:url(chocolate.jpg)"></div>
+            <h3> chocolate is really good for health</h3>
+            <p>california is no stranger to dog nappings/hower,this onw tack the puppy cake....<a class-more-link
+                    href="#">read more....</a>
+        </article>
+        <article>
+            <div class="article-image" style="background:url(html5.jpg)"></div>
+            <h3>learn to html</h3>
+            <p>california is no stranger to dog nappings/hower,this onw tack the puppy cake....<a class-more-link
+                    href="#">read more....</a>
+        </article>
+    </section>
+
+</body>
+
+</html>

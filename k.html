@@ -1,0 +1,66 @@
+<html>
+<head>
+<style>
+	table{width:500px;border:1px solid red}
+	th{width:200px}
+	td{width:150px}
+</style>
+<script>
+	function chkqty(val,tmp)
+	{
+		q=parseInt(val.value);
+		if(tmp=="q" && q<=0)
+		{
+			document.getElementById("pqty").innerHTML="Please enter 1 or more then 1 in quantity"
+			document.getElementById("pqty").style.border="1px solid red"
+			document.getElementById("pqty").style.radius="5px"
+			
+			val.value=1;
+		}
+		else if(tmp=="p" && q<=0)
+		{
+				document.getElementById("pprice").innerHTML="Please enter valid price"
+			val.value=100;
+		
+		}
+		else
+		{
+			document.getElementById("pprice").innerHTML=""
+			document.getElementById("pqty").innerHTML=""
+		}
+	}
+</script>
+</head>
+<body>
+<h1>Planet-e</h1>
+<form name="bill">
+<table>
+	<tr>
+		<th>Product Name</th>
+		<td><input type="text" value="" name="pnm"/></td>
+		<td></td>
+	</tr>
+	<tr>
+		<th>Product Quantity</th>
+		<td><input type="NUmber" value="1" name="qty" onblur="chkqty(document.bill.qty,'q')"/></td>
+		<td id="pqty"></td>
+	</tr>
+	<tr>
+		<th>Product Price</th>
+		<td><input type="text" value="" name="price" onblur="chkqty(document.bill.price,'p')"/></td>
+		<td id="pprice"></td>
+	</tr>
+	<tr>
+		<th>Amount</th>
+		<td><input type="text" value="" name="amo"/></td>
+	<td></td>
+	</tr>
+	
+	<tr>
+		<th colspan="3"><input type="button" value="bill" name="billbtn"/></td>
+	</tr>
+</table>
+</form>
+
+</body>
+</html>

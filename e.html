@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    .my-input{
+        display: block;
+        width: 90%;
+        margin: 10px;
+        padding: 10px 20px;
+        border: 1px solid #aaa;
+    }
+    .my-textarea{
+        display: block;
+        width: 90%;
+        margin: 10px;
+        padding: 10px 20px;
+        border: 1px solid #aaa;
+        resize: none;
+    }
+</style>
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+<script src="main.js"></script>
+  <script >
+    /*
+        var btn= document.getElementById("go-button");
+        function ButtonClicked ()
+        {
+            
+            console.log("button cliked")
+           var customtext= document.getElementsByClassName("my-input");
+           var textarea= document.getElementsByClassName("my-textarea");
+           var result=document.getElementById("text");
+           result.innerHTML="hello, "+customtext[0].value +"<br />"
+           result.innerHTML +="messege, "+textarea[0].value 
+            
+        }
+        document.addEventListener("click", ButtonClicked);
+        */
+    </script>
+
+</head>
+<body>
+    <h1>best news ever</h1>
+    <input class="my-input" placeholder="your name"/><br/><br>
+    <textarea class="my-textarea"placeholder="your massege"></textarea>
+    <button id="go-button">Go</button>
+    <br><br>
+   <div id="text"><div>hi</div>,<div class="unnecessary"><span>word</span></div></div>
+
+
+</body>
+</html>
